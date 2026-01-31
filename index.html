@@ -1,31 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Goal Oriented Academy</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Oriented Academy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Goal Oriented Academy</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">ჩვენს შესახებ</a></li>
+                    <li><a href="#courses">კურსები</a></li>
+                    <li><a href="#register">რეგისტრაცია</a></li>
+                    <li><a href="#contact">კონტაქტი</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<nav class="navbar">
-<div class="logo">Goal Oriented Academy</div>
-<ul class="nav-links">
-    <li><a href="register.html">Register</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contacts</a></li>
-    <li><a href="courses.html">Courses</a></li>
-</ul>
-</nav>
+    <section class="hero">
+        <div class="container">
+            <h2>მიაღწიე მიზნებს ჩვენს დახმარებით</h2>
+            <p>სწავლა, განვითარება და ზრდა Goal Oriented Academy-თან ერთად</p>
+            <a href="#register" class="btn">რეგისტრაცია</a>
+        </div>
+    </section>
 
-<section class="hero">
-<h1>Welcome to Goal Oriented Academy</h1>
-<p>Learn skills. Set goals. Achieve success.</p>
-</section>
+    <section id="about" class="about">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2>ჩვენს შესახებ</h2>
+                <p>Goal Oriented Academy ეხმარება ადამიანებს მიაღწიონ თავიანთ მიზნებს პროფესიულ და პირად ცხოვრებაში. ჩვენი ტრენერები და პროგრამები შექმნილია ყველასთვის, ვისაც სურს განვითარება.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/download (1).jfif" alt="ჩვენს შესახებ">
+            </div>
+        </div>
+    </section>
 
-<footer>
-    © 2026 Goal Oriented Academy
-</footer>
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>ჩვენი კურსები</h2>
+            <div class="course-cards">
+
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <a href="course1.html">
+                        <img src="images/download (2).მმა.jfif" alt="MMA ვარჯიშები">
+                        <h3>MMA ვარჯიშები</h3>
+                        <p>ფიზიკური ვარჯიშები ჩემპიონ მწვრთნელებთან.</p>
+                    </a>
+                </div>
+
+                <div class="course-card">
+                    <a href="course2.html">
+                        <img src="images/777 (2).jfif" alt="პერსონალური განვითარება">
+                        <h3>გრაფუკული დიზაინი</h3>
+                        <p>თვითშეფასება, მიზნების დასახვა და პრაქტიკული სავარჯიშოები.</p>
+                    </a>
+                </div>
+
+                <div class="course-card">
+                    <a href="course3.html">
+                        <img src="images/download (2).jfif" alt="ონლაინ სწავლება">
+                        <h3>ვებ დეველოპმენტი</h3>
+                        <p>სწავლა ნებისმიერ დროს და ნებისმიერ ადგილას.</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="register">
+        <div class="container">
+            <h2>რეგისტრაცია</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="სახელი" required>
+                <input type="email" placeholder="ელ-ფოსტა" required>
+                <input type="password" placeholder="პაროლი" required>
+                <button type="submit">რეგისტრაცია</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>კონტაქტი</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="სახელი" required>
+                <input type="email" placeholder="ელ-ფოსტა" required>
+                <textarea placeholder="შენი მესიჯი" required></textarea>
+                <button type="submit">გაგზავნა</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Goal Oriented Academy. ყველა უფლება დაცულია.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

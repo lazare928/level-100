@@ -6,156 +6,223 @@
 }
 
 body {
-    background: white;
+    background: black;
+    color: white;
+    line-height: 1.6;
 }
 
-.navbar {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: black;
+    border-bottom: 1px solid black;
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background: green;
-    color: white;
+    padding: 20px 0;
 }
 
 .logo {
-    font-size: 1.2rem;
-    font-weight: bold;
+    color: green;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
+    gap: 20px;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: green;
 }
 
 .hero {
-    padding: 4rem;
+    background: linear-gradient(to right, black, black);
+    padding: 100px 20px;
     text-align: center;
 }
 
-.page {
-    padding: 2rem;
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    color: white;
+}
+
+.btn {
+    background: green;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.about {
+    padding: 80px 20px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 12px;
 }
 
 .courses {
+    padding: 80px 20px;
+    background: black;
+}
+
+.courses h2 {
+    text-align: center;
+    color: green;
+    margin-bottom: 40px;
+}
+
+.course-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-.card {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
+.course-card {
+    background: black;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
 }
 
-form {
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-card h3 {
+    padding: 15px;
+    color: green;
+}
+
+.course-card p {
+    padding: 0 15px 20px;
+    color: white;
+}
+
+.register {
+    padding: 80px 20px;
+}
+
+.register h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: green;
+}
+
+.register form {
     max-width: 400px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 15px;
 }
 
-input, textarea, button {
-    padding: 10px;
-}
-
-button {
-    background: green;
-    color: black;
+.register input {
+    padding: 12px;
+    border-radius: 8px;
     border: none;
+}
+
+.register button {
+    padding: 12px;
+    background: green;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
     cursor: pointer;
 }
 
-.register-page {
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, white, white);
-    padding: 2rem;
+.contact {
+    background: black;
+    padding: 80px 20px;
+    border-top: 1px solid #222;
 }
 
-.register-box {
-    background: white;
-    padding: 3rem;
-    width: 100%;
-    max-width: 450px;
-    border-radius: 12px;
+.contact h2 {
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    color: green;
+    margin-bottom: 40px;
+    font-size: 32px;
 }
 
-.register-box h1 {
-    margin-bottom: 0.5rem;
-    color: black;
-}
-
-.register-box p {
-    margin-bottom: 2rem;
-    color: #555;
-}
-
-.register-box form {
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 15px;
 }
 
-.register-box input {
-    padding: 14px;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: 1px solid white;
-}
-
-.register-box input:focus {
-    outline: none;
-    border-color: white;
-}
-
-.register-box button {
-    padding: 14px;
-    font-size: 1.1rem;
+.contact input,
+.contact textarea {
+    padding: 15px;
     border-radius: 8px;
     border: none;
+    font-size: 16px;
+    background: black;
+    color: white;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: gray;
+}
+
+.contact textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.contact button {
+    padding: 15px;
     background: green;
     color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.register-box button:hover {
+.contact button:hover {
     background: green;
 }
 
 footer {
-    margin-top: 2rem;
+    background: black;
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
-    background: white;
-    color: black;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-    flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    .register-box {
-    padding: 2rem;
-    }
+    border-top: 1px solid #222;
 }
